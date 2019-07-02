@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>Help for Translating Night Vision</title>
+</head>
+<!----------------------------------------------------------------------------->
+<body bgcolor="#ffffff">
+<h1>Translating <b>Night Vision</b></h1>
+
+<p><b>Night Vision</b> is now "open source" software, meaning the source
+code can now be downloaded and modified directly.  The following instructions,
+written before open sourcing, serve as a guide as to which source files
+to focus on (and provide a method of translating without the source code).
+
+<p>
+<hr width="98%">
+
+<p><b>Night Vision</b> has been designed to be readily translatable into other
+languages without the author's assistance.  (At least those that use a
+single byte character set.  It is unknown what issues, if any, may arise
+with languages that use a double byte character set.)
+
+<p>The following files or groups of files are translatable:
+<ul>
+<li>nvj.html         -  The documentation file
+<li>license.txt      -  The license file
+<li>nvlocations.txt  -  The location file
+<li>nvstarnames.txt  -  The star name file
+<li>nvdeepsky.txt    -  The deep sky object file
+<li>Text.properties  -  Text used in the windows (other than help)
+<li>Help files       -  Text and graphics used in the help windows
+</ul>
+
+<p>To translate these files requires some knowledge of html (which is the
+markup language used for web documents), familiarity with a command-line
+window (issuing commands, making directories, ...), and the Java Archive
+Tool (jar) which is contained in the Java2 Software Development Kit (SDK).
+Some limited programming experience is highly recommended, otherwise the
+following instructions will probably not make much sense.
+
+<p>The basic procedure is as follows:
+<ol>
+<li>Locate the Night Vision jar file, nvj.jar, in your installation.
+If it cannot be found (e.g. it is buried in a .exe file on a Windows
+install), then download the .zip file (for manual installs) from the
+Night Vision web site and extract it.
+<li>Create a clean directory and place a <i>copy</i> of the
+jar file, nvj.jar, and the documentation file, nvj.html, in it.
+<li>Extract the files to be translated via the following commands:
+<pre>
+  jar xvf nvj.jar com/nvastro/nvj/nvlocations.txt
+  jar xvf nvj.jar com/nvastro/nvj/nvstarnames.txt
+  jar xvf nvj.jar com/nvastro/nvj/nvdeepsky.txt
+  jar xvf nvj.jar com/nvastro/nvj/Text.properties
+  jar xvf nvj.jar com/nvastro/nvj/help/
+</pre>
+<li>Translate nvj.html and the files in the com/nvastro/nvj
+and com/nvastro/nvj/help
+subdirectories.  Special care must be taken when altering Text.properties.
+This file contains numerous "key=value" pairs, where each "value" is a
+piece of text used within the Night Vision windows.  It is very important
+that the "key" text is not altered, otherwise Night Vision will likely
+crash when this text is accessed.
+<br>To aid translation, nvj.html and the help files in the com/nvastro/nvj/help
+subdirectory are viewable with a standard web browser.
+<br>The names of the help files, and the links within those files
+should not be changed, otherwise Night Vision will be unable to locate
+the desired help page.  Adding new files and links is OK.
+<li>After the files are translated, merge the altered files into
+nvj.jar by issuing the following command within the directory
+that the original extraction took place:
+<pre>
+  jar uvf nvj.jar com/nvastro/nvj
+</pre>
+<li>Test the translated Night Vision with the following command:
+<pre>
+  java -jar nvj.jar
+</pre>
+Changes can be easily made by re-editting the extracted files and then
+merging the files back into nvj.jar.
+</ol>
+</body>
+</html>

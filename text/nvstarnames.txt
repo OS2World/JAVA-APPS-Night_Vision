@@ -1,0 +1,513 @@
+# Star name file for Night Vision
+#
+# Comments begin with "#" (must be in 1st column)
+#
+# The following table matches numbers to the Greek letters used to
+# designate stars within a constellation:
+#
+#  01 alpha    05 epsilon  09 iota     13 nu       17 rho      21 phi
+#  02 beta     06 zeta     10 kappa    14 xi       18 sigma    22 chi
+#  03 gamma    07 eta      11 lambda   15 omicron  19 tau      23 psi
+#  04 delta    08 theta    12 mu       16 pi       20 upsilon  24 omega
+#
+# Each star name occupies a single line and is in three parts, with
+# an optional fourth part.  The first two parts identify where the
+# star is.  The third part is the name of the star.  The fourth part,
+# if it appears, is an alternate name of the star and must appear
+# within parenthesis.
+#
+# To describe in more detail, the first part of the line is the standard
+# 3-letter abbreviation for the constellation that the star belongs in.
+#
+# The second part is the designation of the star within the constellation.
+# Most stars have a Greek letter (Bayer) designation, # e.g. alpha,
+# beta, ...  In this case use 01 for alpha, 02 for beta, ... (See table
+# above.)  A few of these stars require a numerical suffix, such as
+# "15-1" and "15-2" which refer to "omicron1" and "omicron2" respectively
+# (see "Beid" and "Keid" below).  Some stars are known by a designation
+# that begins with an English letter, such as "G" or "Y".  Use these
+# directly.  Finally, there are stars that have a numerical designation,
+# which are the Flamsteed numbers.  To use a Flamsteed designation,
+# prefix the number with "F", as in "F80" (see "Alcor" below).
+#
+# The following is an example:
+#
+# Cen 02 Hadar (Agena)
+#  |   |   |      |
+#  |   |   |      -----> Alternate name
+#  |   |   ------------> Common name
+#  |   ----------------> Beta
+#  --------------------> Centaurus
+#
+# Night Vision uses "Hadar (Agena)" in the "Find star" window,
+# but only uses "Hadar" in the main star window.  It is the
+# parenthesis that provides the distinction.  A translator might
+# want to take advantage of this feature by replacing "English_name"
+# with "Foreign_language_name (English_name)".
+#
+# On startup, Night Vision matches the stars below to those within
+# its star database.  Only stars with a minimum brightness of
+# magnitude 6.00 will be matched.  Any stars that could not be
+# matched will be listed in the "Messages" window.
+#
+# Do not move this file:  Night Vision will look for it where it
+# was originally written.
+#
+# - - - Update as of February 2019 - - -
+#
+# In May 2016 the International Astronomical Union established a
+# Working Group on Star Names to catalog and standardize names for
+# stars.  Good references can be found at:
+# https://www.iau.org/public/themes/naming_stars
+# https://en.wikipedia.org/wiki/List_of_proper_names_of_stars
+# Night Vision uses these names (and spellings) with a few deletions
+# and additions.  The following names are deleted:
+# Toliman, Proxima Centauri, Barnard's Star, Ogma,
+# Lich, Tonatiuh, Alruba, and Felis.
+# The following name has been added: Denebokab
+# In addition, some alternate names have been added.
+#
+#-----------------------------------------------------------------------
+
+And 01 Alpheratz
+And 02 Mirach
+And 03-1 Almach
+And 14 Adhil
+And 20 Titawin
+And F14 Veritate
+And F51 Nembus
+
+# Ant
+
+# Aps
+
+Aqr 01 Sadalmelik
+Aqr 02 Sadalsuud
+Aqr 03 Sadachbia
+Aqr 04 Skat
+Aqr 05 Albali
+Aqr 08 Ancha
+Aqr 10 Situla
+Aqr 14 Bunda
+
+Aql 01 Altair
+Aql 02 Alshain
+Aql 03 Tarazed
+Aql 04 Denebokab
+Aql 06 Okab
+Aql 14 Libertas
+
+Ara 12 Cervantes
+
+Ari 01 Hamal
+Ari 02 Sheratan
+Ari 03-1 Mesarthim
+Ari 04 Botein
+Ari F39 Lilii Borea
+Ari F41 Bharani
+
+Aur 01 Capella
+Aur 02 Menkalinan
+Aur 05 Almaaz
+Aur 06 Saclateni
+Aur 07 Haedus
+Aur 08 Mahasim
+Aur 09 Hassaleh
+
+Boo 01 Arcturus
+Boo 02 Nekkar
+Boo 03 Seginus
+Boo 05 Izar
+Boo 07 Muphrid
+Boo 11 Xuange
+Boo 12-1 Alkalurops
+Boo F38 Merga
+
+# Cae
+
+# Cam
+
+Cnc 01 Acubens
+Cnc 02 Tarf
+Cnc 03 Asellus Borealis
+Cnc 04 Asellus Australis
+Cnc 06-1 Tegmine
+Cnc 11 Piautos
+Cnc 14 Nahn
+Cnc F55 Copernicus
+
+CVn 01 Cor Caroli
+CVn 02 Chara (Asterion)
+CVn Y La Superba
+
+CMa 01 Sirius
+CMa 02 Mirzam
+CMa 03 Muliphein
+CMa 04 Wezen
+CMa 05 Adhara
+CMa 06 Furud
+CMa 07 Aludra
+CMa 18 Unurgunite
+
+CMi 01 Procyon
+CMi 02 Gomeisa
+
+Cap 01-2 Algedi
+Cap 02 Dabih
+Cap 03 Nashira
+Cap 04 Deneb Algedi
+Cap 13 Alshat
+
+Car 01 Canopus
+Car 02 Miaplacidus
+Car 05 Avior
+Car 09 Aspidiske (Tureis)
+
+Cas 01 Schedar
+Cas 02 Caph
+Cas 04 Ruchbah
+Cas 05 Segin
+Cas 06 Fulu
+Cas 07 Achird
+Cas 20-2 Castula
+
+Cen 01 Rigil Kentaurus
+Cen 02 Hadar (Agena)
+Cen 08 Menkent
+
+Cep 01 Alderamin
+Cep 02 Alfirk
+Cep 03 Errai
+Cep 14 Kurhah
+
+Cet 01 Menkar
+Cet 02 Diphda (Deneb Kaitos)
+Cet 03 Kaffaljidhma
+Cet 06 Baten Kaitos
+Cet 15 Mira
+
+# Cha
+
+# Cir
+
+Col 01 Phact
+Col 02 Wazn
+Col 08 Elkurud
+
+Com 01 Diadem
+
+CrA 01 Meridiana
+
+CrB 01 Alphecca
+CrB 02 Nusakan
+
+Crv 01 Alchiba
+Crv 02 Kraz
+Crv 03 Gienah
+Crv 04 Algorab
+
+Crt 01 Alkes
+
+Cru 01 Acrux
+Cru 02 Mimosa
+Cru 03 Gacrux
+Cru 04 Imai
+Cru 05 Ginan
+
+Cyg 01 Deneb
+Cyg 02-1 Albireo
+Cyg 03 Sadr
+Cyg 04 Fawaris
+Cyg 05 Aljanah (Gienah)
+Cyg 16-1 Azelfafage
+
+Del 01 Sualocin
+Del 02 Rotanev
+Del 05 Aldulfin
+Del F18 Musica
+
+# Dor
+
+Dra 01 Thuban
+Dra 02 Rastaban
+Dra 03 Eltanin
+Dra 04 Altais
+Dra 06 Aldhibah
+Dra 07 Athebyne
+Dra 09 Edasich
+Dra 11 Giausar
+Dra 12 Alrakis
+Dra 14 Grumium
+Dra 18 Alsafi
+Dra 23 Dziban
+Dra F7 Tianyi
+Dra F8 Taiyi
+Dra F42 Fafnir
+
+Equ 01 Kitalpha
+
+Eri 01 Achernar
+Eri 02 Cursa
+Eri 03 Zaurak
+Eri 05 Ran
+Eri 06 Zibal
+Eri 07 Azha
+Eri 08-1 Acamar
+Eri 15-1 Beid
+Eri 15-2 Keid
+Eri 19-2 Angetenar
+Eri 20-2 Theemin
+Eri F43 Beemim
+Eri F53 Sceptrum
+
+For 01 Dalim
+
+Gem 01 Castor
+Gem 02 Pollux
+Gem 03 Alhena
+Gem 04 Wasat
+Gem 05 Mebsuta
+Gem 06 Mekbuda
+Gem 07 Propus
+Gem 12 Tejat
+Gem 14 Alzirr
+Gem 15 Jishui
+
+Gru 01 Alnair
+Gru 02 Tiaki
+Gru 03 Aldhanab
+
+Her 01-1 Rasalgethi
+Her 02 Kornephoros
+Her 04 Sarin
+Her 10 Marsic
+Her 11 Maasym
+Her 24 Cujam
+
+# Hor
+
+Hya 01 Alphard
+Hya 05 Ashlesha
+Hya 09 Ukdah
+Hya 18 Minchir
+Hya 20-1 Zhang
+
+# Hyi
+
+# Ind
+
+# Lac
+
+Leo 01 Regulus
+Leo 02 Denebola
+Leo 03-1 Algieba
+Leo 04 Zosma
+Leo 06 Adhafera
+Leo 08 Chertan (Coxa)
+Leo 11 Alterf
+Leo 12 Rasalas
+Leo 15 Subra
+
+LMi F46 Praecipua
+
+Lep 01 Arneb
+Lep 02 Nihal
+
+Lib 01-2 Zubenelgenubi
+Lib 02 Zubeneschamali
+Lib 03 Zubenelhakrabi
+Lib 18 Brachium
+
+# Lup
+
+Lyn F31 Alsciaukat
+Lyn F41 Intercrus
+
+Lyr 01 Vega
+Lyr 02 Sheliak
+Lyr 03 Sulafat
+Lyr 07 Aladfar
+
+# Men
+
+# Mic
+
+# Mon
+
+# Mus
+
+# Nor
+
+Oct 18 Polaris Australis
+
+Oph 01 Rasalhague
+Oph 02 Cebalrai
+Oph 04 Yed Prior
+Oph 05 Yed Posterior
+Oph 07 Sabik
+Oph 11 Marfik
+Oph F36 Guniibuu
+
+Ori 01 Betelgeuse
+Ori 02 Rigel
+Ori 03 Bellatrix
+Ori 04 Mintaka
+Ori 05 Alnilam
+Ori 06 Alnitak
+Ori 09 Hatysa
+Ori 10 Saiph
+Ori 11 Meissa
+Ori 16-3 Tabit
+
+Pav 01 Peacock
+
+Peg 01 Markab
+Peg 02 Scheat
+Peg 03 Algenib
+Peg 05 Enif
+Peg 06 Homam
+Peg 07 Matar
+Peg 08 Biham
+Peg 12 Sadalbari
+Peg 19 Salm
+Peg 20 Alkarab
+Peg F51 Helvetios
+
+Per 01 Mirfak
+Per 02 Algol
+Per 07 Miram
+Per 10 Misam
+Per 14 Menkib
+Per 15 Atik
+
+Phe 01 Ankaa
+Phe 06 Wurren
+
+# Pic
+
+Psc 01 Alrescha
+Psc 02 Fumalsamakah
+Psc 06 Revati
+Psc 07 Alpherg
+Psc 15 Torcular
+
+PsA 01 Fomalhaut
+
+Pup 06 Naos
+Pup 14 Azmidi (Asmidiske)
+Pup 17 Tureis
+
+# Pyx
+
+# Ret
+
+Sge 01 Sham
+
+Sgr 01 Rukbat
+Sgr 02-1 Arkab Prior
+Sgr 02-2 Arkab Posterior
+Sgr 03 Alnasl
+Sgr 04 Kaus Media
+Sgr 05 Kaus Australis
+Sgr 06 Ascella
+Sgr 11 Kaus Borealis
+Sgr 12 Polis
+Sgr 13-1 Ainalrami
+Sgr 16 Albaldah
+Sgr 18 Nunki
+Sgr 24 Terebellum
+
+Sco 01 Antares
+Sco 02 Acrab
+Sco 04 Dschubba
+Sco 05 Larawag
+Sco 08 Sargas
+Sco 11 Shaula
+Sco 12-1 Xamidimura
+Sco 12-2 Pipirima
+Sco 13 Jabbah
+Sco 16 Fang
+Sco 17 Iklil
+Sco 19 Paikauhale
+Sco 18 Alniyat
+Sco 20 Lesath
+Sco G Fuyue
+
+# Scl
+
+# Sct
+
+Ser 01 Unukalhai
+Ser 08-1 Alya
+Ser 10 Gudja
+
+# Sex
+
+Tau 01 Aldebaran
+Tau 02 Elnath
+Tau 03 Prima Hyadum
+Tau 04-1 Secunda Hyadum
+Tau 05 Ain
+Tau 06 Tianguan
+Tau 07 Alcyone
+Tau 08-2 Chamukuy
+Tau F16 Celaeno
+Tau F17 Electra
+Tau F19 Taygeta
+Tau F20 Maia
+Tau F21 Asterope
+Tau F23 Merope
+Tau F27 Atlas
+Tau F28 Pleione
+
+# Tel
+
+Tri 01 Mothallah
+
+TrA 01 Atria
+
+# Tuc
+
+UMa 01 Dubhe
+UMa 02 Merak
+UMa 03 Phecda
+UMa 04 Megrez
+UMa 05 Alioth
+UMa 06 Mizar
+UMa 07 Alkaid
+UMa 09 Talitha
+UMa 10 Alkaphrah
+UMa 11 Tania Borealis
+UMa 12 Tania Australis
+UMa 13 Alula Borealis
+UMa 14 Alula Australis
+UMa 15 Muscida
+UMa 22 Taiyangshou
+UMa F47 Chalawan
+UMa F80 Alcor
+
+UMi 01 Polaris
+UMi 02 Kochab
+UMi 03 Pherkad
+UMi 04 Yildun
+
+Vel 04 Alsephina
+Vel 10 Markeb
+Vel 11 Suhail
+
+Vir 01 Spica
+Vir 02 Zavijava
+Vir 03 Porrima
+Vir 04 Minelauva
+Vir 05 Vindemiatrix
+Vir 06 Heze
+Vir 07 Zaniah
+Vir 09 Syrma
+Vir 10 Kang
+Vir 11 Khambalia
+Vir 21 Elgafar
+
+# Vol
+
+Vul 01 Anser
+

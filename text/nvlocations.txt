@@ -1,0 +1,326 @@
+# Location file for Night Vision
+#
+# Lines beginning with '#' are comments.
+#
+# This file contains the cities, towns, and viewing locations used by
+# Night Vision.  Feel free to edit this file to suit your preferences
+# by using a text editor.  If you use a word processor, be sure to save
+# as an ASCII text file, otherwise Night Vision will probably not be able
+# to read it correctly.  Also do not save with tabs.  Do not move this file:
+# Night Vision will look for it where it was originally written.
+#
+# Each location is represented by a line containing the following information:
+# - Location name - Name of viewing location.
+# - Longitude - Represented as degrees:minutes for eastern longitudes
+#              or -degrees:minutes for western longitudes.  Values may
+#              range from -180:00 to 180:00.  Minutes must be between
+#              00 and 59.
+# - Latitude - Represented as degrees:minutes for north of the equator
+#              or -degrees:minutes for south of the equator.  Values may
+#              range from -90:00 to 90:00.  Minutes must be between
+#              00 and 59.
+# - Timezone - Represented as either a numeric value or a text string.
+#              Numeric values are hours:minutes for eastern timezones
+#              and -hours:minutes for western timezones.  For example
+#              Denver, Colorado, USA can be represented by -7:00, which
+#              is the standard time difference between Denver and Greenwich,
+#              England.  Numeric values may range from -13:00 to 13:00.
+#              Minutes must be between 00 and 59.
+#              However, it is recommended to use a text string to represent
+#              the timezone, if possible.  Text strings allow Night Vision
+#              to automatically adjust for daylight saving time (DST).
+#              They must match one of the strings that your Java environment
+#              uses to describe the various timezones, and are listed below.
+#              For example the zone for Denver, Colorado, USA is
+#              America/Denver.
+#
+# Your Java environment uses the following text strings to describe
+# the various timezones around the world:
+#
+# Africa/Abidjan              America/Puerto_Rico         Canada/Mountain
+# Africa/Accra                America/Rainy_River         Canada/Newfoundland
+# Africa/Addis_Ababa          America/Rankin_Inlet        Canada/Pacific
+# Africa/Algiers              America/Recife              Canada/Saskatchewan
+# Africa/Asmara               America/Regina              Canada/Yukon
+# Africa/Asmera               America/Resolute            Chile/Continental
+# Africa/Bamako               America/Rio_Branco          Chile/EasterIsland
+# Africa/Bangui               America/Rosario             Etc/GMT
+# Africa/Banjul               America/Santa_Isabel        Etc/GMT-0
+# Africa/Bissau               America/Santarem            Etc/GMT+0
+# Africa/Blantyre             America/Santiago            Etc/GMT0
+# Africa/Brazzaville          America/Santo_Domingo       Etc/GMT-10
+# Africa/Bujumbura            America/Sao_Paulo           Etc/GMT+10
+# Africa/Cairo                America/Scoresbysund        Etc/GMT-11
+# Africa/Casablanca           America/Shiprock            Etc/GMT+11
+# Africa/Ceuta                America/Sitka               Etc/GMT-12
+# Africa/Conakry              America/St_Barthelemy       Etc/GMT+12
+# Africa/Dakar                America/St_Johns            Etc/GMT-13
+# Africa/Dar_es_Salaam        America/St_Kitts            Etc/GMT-14
+# Africa/Djibouti             America/St_Lucia            Etc/GMT-1
+# Africa/Douala               America/St_Thomas           Etc/GMT+1
+# Africa/El_Aaiun             America/St_Vincent          Etc/GMT-2
+# Africa/Freetown             America/Swift_Current       Etc/GMT+2
+# Africa/Gaborone             America/Tegucigalpa         Etc/GMT-3
+# Africa/Harare               America/Thule               Etc/GMT+3
+# Africa/Johannesburg         America/Thunder_Bay         Etc/GMT-4
+# Africa/Juba                 America/Tijuana             Etc/GMT+4
+# Africa/Kampala              America/Toronto             Etc/GMT-5
+# Africa/Khartoum             America/Tortola             Etc/GMT+5
+# Africa/Kigali               America/Vancouver           Etc/GMT-6
+# Africa/Kinshasa             America/Virgin              Etc/GMT+6
+# Africa/Lagos                America/Whitehorse          Etc/GMT-7
+# Africa/Libreville           America/Winnipeg            Etc/GMT+7
+# Africa/Lome                 America/Yakutat             Etc/GMT-8
+# Africa/Luanda               America/Yellowknife         Etc/GMT+8
+# Africa/Lubumbashi           Antarctica/Casey            Etc/GMT-9
+# Africa/Lusaka               Antarctica/Davis            Etc/GMT+9
+# Africa/Malabo               Antarctica/DumontDUrville   Etc/Greenwich
+# Africa/Maputo               Antarctica/Macquarie        Etc/UCT
+# Africa/Maseru               Antarctica/Mawson           Etc/Universal
+# Africa/Mbabane              Antarctica/McMurdo          Etc/UTC
+# Africa/Mogadishu            Antarctica/Palmer           Etc/Zulu
+# Africa/Monrovia             Antarctica/Rothera          Europe/Amsterdam
+# Africa/Nairobi              Antarctica/South_Pole       Europe/Andorra
+# Africa/Ndjamena             Antarctica/Syowa            Europe/Athens
+# Africa/Niamey               Antarctica/Troll            Europe/Belfast
+# Africa/Nouakchott           Antarctica/Vostok           Europe/Belgrade
+# Africa/Ouagadougou          Arctic/Longyearbyen         Europe/Berlin
+# Africa/Porto-Novo           Asia/Aden                   Europe/Bratislava
+# Africa/Sao_Tome             Asia/Almaty                 Europe/Brussels
+# Africa/Timbuktu             Asia/Amman                  Europe/Bucharest
+# Africa/Tripoli              Asia/Anadyr                 Europe/Budapest
+# Africa/Tunis                Asia/Aqtau                  Europe/Busingen
+# Africa/Windhoek             Asia/Aqtobe                 Europe/Chisinau
+# America/Adak                Asia/Ashgabat               Europe/Copenhagen
+# America/Anchorage           Asia/Ashkhabad              Europe/Dublin
+# America/Anguilla            Asia/Baghdad                Europe/Gibraltar
+# America/Antigua             Asia/Bahrain                Europe/Guernsey
+# America/Araguaina           Asia/Baku                   Europe/Helsinki
+# America/Argentina/Buenos_Aires  Asia/Bangkok            Europe/Isle_of_Man
+# America/Argentina/Catamarca  Asia/Beirut                Europe/Istanbul
+# America/Argentina/ComodRivadavia  Asia/Bishkek          Europe/Jersey
+# America/Argentina/Cordoba   Asia/Brunei                 Europe/Kaliningrad
+# America/Argentina/Jujuy     Asia/Calcutta               Europe/Kiev
+# America/Argentina/La_Rioja  Asia/Chita                  Europe/Lisbon
+# America/Argentina/Mendoza   Asia/Choibalsan             Europe/Ljubljana
+# America/Argentina/Rio_Gallegos  Asia/Chongqing          Europe/London
+# America/Argentina/Salta     Asia/Chungking              Europe/Luxembourg
+# America/Argentina/San_Juan  Asia/Colombo                Europe/Madrid
+# America/Argentina/San_Luis  Asia/Dacca                  Europe/Malta
+# America/Argentina/Tucuman   Asia/Damascus               Europe/Mariehamn
+# America/Argentina/Ushuaia   Asia/Dhaka                  Europe/Minsk
+# America/Aruba               Asia/Dili                   Europe/Monaco
+# America/Asuncion            Asia/Dubai                  Europe/Moscow
+# America/Atikokan            Asia/Dushanbe               Europe/Nicosia
+# America/Atka                Asia/Gaza                   Europe/Oslo
+# America/Bahia               Asia/Harbin                 Europe/Paris
+# America/Bahia_Banderas      Asia/Hebron                 Europe/Podgorica
+# America/Barbados            Asia/Ho_Chi_Minh            Europe/Prague
+# America/Belem               Asia/Hong_Kong              Europe/Riga
+# America/Belize              Asia/Hovd                   Europe/Rome
+# America/Blanc-Sablon        Asia/Irkutsk                Europe/Samara
+# America/Boa_Vista           Asia/Istanbul               Europe/San_Marino
+# America/Bogota              Asia/Jakarta                Europe/Sarajevo
+# America/Boise               Asia/Jayapura               Europe/Simferopol
+# America/Buenos_Aires        Asia/Jerusalem              Europe/Skopje
+# America/Cambridge_Bay       Asia/Kabul                  Europe/Sofia
+# America/Campo_Grande        Asia/Kamchatka              Europe/Stockholm
+# America/Cancun              Asia/Karachi                Europe/Tallinn
+# America/Caracas             Asia/Kashgar                Europe/Tirane
+# America/Catamarca           Asia/Kathmandu              Europe/Tiraspol
+# America/Cayenne             Asia/Katmandu               Europe/Uzhgorod
+# America/Cayman              Asia/Khandyga               Europe/Vaduz
+# America/Chicago             Asia/Kolkata                Europe/Vatican
+# America/Chihuahua           Asia/Krasnoyarsk            Europe/Vienna
+# America/Coral_Harbour       Asia/Kuala_Lumpur           Europe/Vilnius
+# America/Cordoba             Asia/Kuching                Europe/Volgograd
+# America/Costa_Rica          Asia/Kuwait                 Europe/Warsaw
+# America/Creston             Asia/Macao                  Europe/Zagreb
+# America/Cuiaba              Asia/Macau                  Europe/Zaporozhye
+# America/Curacao             Asia/Magadan                Europe/Zurich
+# America/Danmarkshavn        Asia/Makassar               Indian/Antananarivo
+# America/Dawson              Asia/Manila                 Indian/Chagos
+# America/Dawson_Creek        Asia/Muscat                 Indian/Christmas
+# America/Denver              Asia/Nicosia                Indian/Cocos
+# America/Detroit             Asia/Novokuznetsk           Indian/Comoro
+# America/Dominica            Asia/Novosibirsk            Indian/Kerguelen
+# America/Edmonton            Asia/Omsk                   Indian/Mahe
+# America/Eirunepe            Asia/Oral                   Indian/Maldives
+# America/El_Salvador         Asia/Phnom_Penh             Indian/Mauritius
+# America/Ensenada            Asia/Pontianak              Indian/Mayotte
+# America/Fortaleza           Asia/Pyongyang              Indian/Reunion
+# America/Fort_Nelson         Asia/Qatar                  Mexico/BajaNorte
+# America/Fort_Wayne          Asia/Qyzylorda              Mexico/BajaSur
+# America/Glace_Bay           Asia/Rangoon                Mexico/General
+# America/Godthab             Asia/Riyadh                 Pacific/Apia
+# America/Goose_Bay           Asia/Saigon                 Pacific/Auckland
+# America/Grand_Turk          Asia/Sakhalin               Pacific/Bougainville
+# America/Grenada             Asia/Samarkand              Pacific/Chatham
+# America/Guadeloupe          Asia/Seoul                  Pacific/Chuuk
+# America/Guatemala           Asia/Shanghai               Pacific/Easter
+# America/Guayaquil           Asia/Singapore              Pacific/Efate
+# America/Guyana              Asia/Srednekolymsk          Pacific/Enderbury
+# America/Halifax             Asia/Taipei                 Pacific/Fakaofo
+# America/Havana              Asia/Tashkent               Pacific/Fiji
+# America/Hermosillo          Asia/Tbilisi                Pacific/Funafuti
+# America/Indiana/Indianapolis  Asia/Tehran               Pacific/Galapagos
+# America/Indiana/Knox        Asia/Tel_Aviv               Pacific/Gambier
+# America/Indiana/Marengo     Asia/Thimbu                 Pacific/Guadalcanal
+# America/Indiana/Petersburg  Asia/Thimphu                Pacific/Guam
+# America/Indianapolis        Asia/Tokyo                  Pacific/Honolulu
+# America/Indiana/Tell_City   Asia/Ujung_Pandang          Pacific/Johnston
+# America/Indiana/Vevay       Asia/Ulaanbaatar            Pacific/Kiritimati
+# America/Indiana/Vincennes   Asia/Ulan_Bator             Pacific/Kosrae
+# America/Indiana/Winamac     Asia/Urumqi                 Pacific/Kwajalein
+# America/Inuvik              Asia/Ust-Nera               Pacific/Majuro
+# America/Iqaluit             Asia/Vientiane              Pacific/Marquesas
+# America/Jamaica             Asia/Vladivostok            Pacific/Midway
+# America/Jujuy               Asia/Yakutsk                Pacific/Nauru
+# America/Juneau              Asia/Yekaterinburg          Pacific/Niue
+# America/Kentucky/Louisville  Asia/Yerevan               Pacific/Norfolk
+# America/Kentucky/Monticello  Atlantic/Azores            Pacific/Noumea
+# America/Knox_IN             Atlantic/Bermuda            Pacific/Pago_Pago
+# America/Kralendijk          Atlantic/Canary             Pacific/Palau
+# America/La_Paz              Atlantic/Cape_Verde         Pacific/Pitcairn
+# America/Lima                Atlantic/Faeroe             Pacific/Pohnpei
+# America/Los_Angeles         Atlantic/Faroe              Pacific/Ponape
+# America/Louisville          Atlantic/Jan_Mayen          Pacific/Port_Moresby
+# America/Lower_Princes       Atlantic/Madeira            Pacific/Rarotonga
+# America/Maceio              Atlantic/Reykjavik          Pacific/Saipan
+# America/Managua             Atlantic/South_Georgia      Pacific/Samoa
+# America/Manaus              Atlantic/Stanley            Pacific/Tahiti
+# America/Marigot             Atlantic/St_Helena          Pacific/Tarawa
+# America/Martinique          Australia/ACT               Pacific/Tongatapu
+# America/Matamoros           Australia/Adelaide          Pacific/Truk
+# America/Mazatlan            Australia/Brisbane          Pacific/Wake
+# America/Mendoza             Australia/Broken_Hill       Pacific/Wallis
+# America/Menominee           Australia/Canberra          Pacific/Yap
+# America/Merida              Australia/Currie            SystemV/AST4
+# America/Metlakatla          Australia/Darwin            SystemV/AST4ADT
+# America/Mexico_City         Australia/Eucla             SystemV/CST6
+# America/Miquelon            Australia/Hobart            SystemV/CST6CDT
+# America/Moncton             Australia/LHI               SystemV/EST5
+# America/Monterrey           Australia/Lindeman          SystemV/EST5EDT
+# America/Montevideo          Australia/Lord_Howe         SystemV/HST10
+# America/Montreal            Australia/Melbourne         SystemV/MST7
+# America/Montserrat          Australia/North             SystemV/MST7MDT
+# America/Nassau              Australia/NSW               SystemV/PST8
+# America/New_York            Australia/Perth             SystemV/PST8PDT
+# America/Nipigon             Australia/Queensland        SystemV/YST9
+# America/Nome                Australia/South             SystemV/YST9YDT
+# America/Noronha             Australia/Sydney            US/Alaska
+# America/North_Dakota/Beulah  Australia/Tasmania         US/Aleutian
+# America/North_Dakota/Center  Australia/Victoria         US/Arizona
+# America/North_Dakota/New_Salem  Australia/West          US/Central
+# America/Ojinaga             Australia/Yancowinna        US/Eastern
+# America/Panama              Brazil/Acre                 US/East-Indiana
+# America/Pangnirtung         Brazil/DeNoronha            US/Hawaii
+# America/Paramaribo          Brazil/East                 US/Indiana-Starke
+# America/Phoenix             Brazil/West                 US/Michigan
+# America/Port-au-Prince      Canada/Atlantic             US/Mountain
+# America/Porto_Acre          Canada/Central              US/Pacific
+# America/Port_of_Spain       Canada/Eastern              US/Pacific-New
+# America/Porto_Velho         Canada/East-Saskatchewan    US/Samoa
+#
+#
+# The order in which the locations are listed is the same order in which
+# they will appear in the "Set location" window.  Therefore the user can
+# rearrange the order to their preferences, such as grouping locations
+# within the same country together.  Also the name can be indented if
+# desired (i.e. it does not have to start in column 1, but can appear
+# anywhere in columns 1-30).
+#
+# Night Vision reads the location data according to column, so it is
+# important to keep information in the following columns:
+#  1 - 30    Location name
+# 32 - 38    Longitude
+# 40 - 45    Latitude
+# 47 - ...   Timezone
+# Columns 31, 39, and 46 must be blank.  Do not use tabs.
+#
+#------ Location name --------|--Long-|--Lat-|-Timezone--------
+Addis Ababa, Ethiopia            38:47   9:00 Africa/Addis_Ababa
+Adelaide, Australia             138:35 -34:54 Australia/Adelaide
+Amsterdan, Netherlands            4:54  52:22 Europe/Amsterdam
+Anchorage, Alaska, USA         -149:53  61:13 America/Anchorage
+Antwerp, Belgium                  4:25  51:13 Europe/Brussels
+Bangkok, Thailand               100:35  13:41 Asia/Bangkok
+Beijin, China                   116:23  39:55 Asia/Shanghai
+Beirut, Lebanon                  35:30  33:53 Asia/Beirut
+Berlin, Germany                  13:23  52:32 Europe/Berlin
+Bogota, Columbia                -74:05   4:38 America/Bogota
+Boulder, Colorado, USA         -105:17  40:01 America/Denver
+Brasilia, Brazil                -47:54 -15:48 America/Sao_Paulo
+Buenos Aires, Argentina         -58:26 -34:36 America/Buenos_Aires
+Cairo, Egypt                     31:15  30:00 Africa/Cairo
+Calcutta, India                  88:22  22:34 Asia/Calcutta
+Calgary, Canada                -114:06  51:03 America/Edmonton
+Cape Town, South Africa          18:24 -33:54 Africa/Johannesburg
+Caracas, Venezuela              -66:55  10:31 America/Caracas
+Casablanca, Morocco              -7:42  33:36 Africa/Casablanca
+Chicago, Illinois, USA          -87:39  41:52 America/Chicago
+Copenhagen, Denmark              12:29  55:43 Europe/Copenhagen
+Dakar, Senegal                  -17:24  14:40 Africa/Dakar
+Dallas, Texas, USA              -96:47  32:47 America/Chicago
+Denver, Colorado, USA          -104:59  39:44 America/Denver
+Easter Island                  -109:20 -27:05 Pacific/Easter
+Fort Collins, Colorado, USA    -105:05  40:33 America/Denver
+Galloway Forest Park, Scotland   -4:19  55:02 Europe/London
+Geneva, Switzerland               6:09  46:12 Europe/Zurich
+Helsinki, Finland                24:56  60:09 Europe/Helsinki
+Hong Kong, China                114:08  22:25 Asia/Hong_Kong
+Honolulu, Hawaii, USA          -157:51  21:19 Pacific/Honolulu
+Jakarta, Indonesia              106:47  -6:09 Asia/Jakarta
+Jerusalem                        35:13  31:47 Asia/Jerusalem
+Kabul, Afghanistan               69:09  34:30 Asia/Kabul
+Katmandu, Nepal                  85:18  27:42 Asia/Katmandu
+Kiev, Ukraine                    30:28  50:24 Europe/Kiev
+La Paz, Bolivia                 -68:09 -16:30 America/La_Paz
+Las Vegas, Nevada, USA         -115:09  36:10 America/Los_Angeles
+Lima, Peru                      -77:02 -12:07 America/Lima
+London, England                  -0:04  51:31 Europe/London
+Longmont, Colorado, USA        -105:06  40:10 America/Denver
+Los Angeles, California, USA   -118:13  34:03 America/Los_Angeles
+Madrid, Spain                    -3:40  40:24 Europe/Madrid
+Manila, Philippines             120:59  14:36 Asia/Manila
+Mexico City, Mexico             -99:11  19:26 America/Mexico_City
+Miami, Florida, USA             -80:12  25:48 America/New_York
+Minneapolis, Minnesota, USA     -93:16  44:59 America/Chicago
+Montreal, Canada                -73:36  45:31 America/Montreal
+Moscow, Russia                   37:37  55:45 Europe/Moscow
+Munich, Germany                  11:34  48:08 Europe/Berlin
+Nairobi, Kenya                   36:49  -1:19 Africa/Nairobi
+New Delhi, India                 77:12  28:36 Asia/Calcutta
+New York City, New York, USA    -74:00  40:45 America/New_York
+Niwot, Colorado, USA           -105:10  40:06 America/Denver
+North Pole                        0:00  90:00 0:00
+Osaka, Japan                    135:30  34:40 Asia/Tokyo
+Oslo, Norway                     10:45  59:56 Europe/Oslo
+Paris, France                     2:21  48:52 Europe/Paris
+Phoenix, Arizona, USA          -112:05  33:27 America/Phoenix
+Quito, Ecuador                  -78:30  -0:13 America/Guayaquil
+Rangoon, Myanmar                 96:10  16:47 Asia/Rangoon
+Reykjavik, Iceland              -21:52  64:10 Atlantic/Reykjavik
+Rio de Janeiro, Brazil          -43:09 -22:56 America/Sao_Paulo
+Rome, Italy                      12:31  41:52 Europe/Rome
+Salt Lake City, Utah, USA      -111:53  40:45 America/Denver
+Santiago, Chile                 -70:40 -33:30 America/Santiago
+Seattle, Washington, USA       -122:18  47:34 America/Los_Angeles
+Seoul, South Korea              127:00  37:32 Asia/Seoul
+Shanghai, China                 121:28  31:14 Asia/Shanghai
+Singapore                       103:51   1:14 Asia/Singapore
+South Pole                        0:00 -90:00 0:00
+Stockholm, Sweden                18:10  59:20 Europe/Stockholm
+St. Louis, Missouri, USA        -90:15  38:37 America/Chicago
+St. Petersburg, Russia           30:21  59:57 Europe/Moscow
+Sydney, Australia               151:13 -33:54 Australia/Sydney
+Taipei, Taiwan                  121:31  25:02 Asia/Taipei
+Tehran, Iran                     51:25  35:40 Asia/Tehran
+Tokyo, Japan                    139:47  35:41 Asia/Tokyo
+Toronto, Canada                 -79:23  43:41 America/Montreal
+Tripoli, Libya                   13:12  32:50 Africa/Tripoli
+Ulaanbaatar, Mongolia           106:54  47:53 Asia/Ulan_Bator
+Vienna, Austria                  16:22  48:12 Europe/Vienna
+Vladivostok, Russia             131:58  43:02 Asia/Vladivostok
+Washington, D.C., USA           -77:00  38:54 America/New_York
+Wellington, New Zealand         174:48 -41:16 Pacific/Auckland

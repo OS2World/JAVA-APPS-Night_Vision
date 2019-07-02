@@ -1,0 +1,135 @@
+<?xml version="1.0" ?>
+
+<!--=====================================
+
+- - - Source directories - - -
+
+src
+ com
+  nvastro
+   nvj    (.java)
+images    (.gif, .jpg)
+help      (.html, images)
+text      (nv*.txt, Text.properties, nvj.html, license.txt)
+data      (star.db, also Milky Way and constellation dbs)
+
+
+- - - Derived directories - - -
+
+build     (Runnable (java -jar nvj.jar; java com.nvastro.nvj.Nvj))
+ com
+  nvastro
+   nvj
+    help
+
+javadoc   (Html documentation on NV classes)
+
+======================================-->
+
+
+<project default="main">
+
+  <!-- Keep in sync with Nvj.java... -->
+  <property name="year"    value="2019" />
+  <property name="version" value="5.1" />
+
+
+  <!-- Source directories -->
+  <property name="src"     value="src" />
+  <property name="images"  value="images" />
+  <property name="text"    value="text" />
+  <property name="help"    value="help" />
+  <property name="data"    value="data" />
+  <!-- Derived directories -->
+  <property name="build"   value="build" />
+  <property name="javadoc" value="javadoc" />
+
+
+  <filterset id="year.ver.filter"> <!-- for dirs help and text -->
+    <filter token="YEAR"    value="${year}" />
+    <filter token="VERSION" value="${version}" />
+  </filterset>
+
+  <target name="main">
+    <echo>
+      Targets:
+      --------
+      init      -  Creates build directory
+      compile   -  Runs javac
+      build     -  Does compile and sets up run environment
+      run       -  Runs NV (classes, not jar)
+      compress  -  Builds NV jar file
+      javadoc   -  Creates documentation via javadoc
+      clean     -  Cleans up
+    </echo>
+  </target>
+
+  <target name="init">
+    <mkdir dir="${build}" />
+  </target>
+
+  <target name="compile" depends="init">
+    <javac srcdir="${src}" destdir="${build}" includeAntRuntime="false">
+      <compilerarg line="-source 1.5 -target 1.5" />
+      <!-- compilerarg line="-source 1.5" / -->
+      <!-- -source 1.5 ensures -target 1.5 -->
+    </javac>
+  </target>
+
+  <target name="build" depends="compile">
+    <copy todir="${build}/com/nvastro/nvj">
+      <fileset dir="${images}" />
+      <fileset file="${text}/Text.properties" />
+      <fileset file="${text}/nvdeepsky.txt" />
+      <fileset file="${text}/nvlocations.txt" />
+      <fileset file="${text}/nvstarnames.txt" />
+      <fileset file="${data}/star.db" />
+      <fileset file="${data}/conbounds.db" />
+      <fileset file="${data}/conlines.db" />
+      <fileset file="${data}/milkyway.db" />
+    </copy>
+    <copy todir="${build}/com/nvastro/nvj/help">
+      <filterset refid="year.ver.filter" />
+      <fileset dir="${help}">
+        <include name="*.html" />
+      </fileset>
+    </copy>
+    <copy todir="${build}/com/nvastro/nvj/help">
+      <fileset dir="${help}">
+        <exclude name="*.html" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="run" depends="build">
+    <java classname="com.nvastro.nvj.Nvj" dir="${build}"
+      fork="true"> <!-- spawn="true" -->
+      <classpath>
+        <pathelement location="${build}" />
+      </classpath>
+      <!-- arg value="..." / -->
+    </java>
+  </target>
+
+  <target name="compress" depends="build">
+    <delete file="${build}/nvj.jar" /> <!-- Only if out of date? -->
+    <jar destfile="${build}/nvj.jar" basedir="${build}" excludes="nvj.ini">
+      <manifest>
+        <attribute name="Main-Class" value="com.nvastro.nvj.Nvj" />
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="javadoc">
+    <javadoc
+      sourcepath="${src}"
+      destdir="${javadoc}" />
+  </target>
+
+  <target name="clean">
+    <delete dir="${build}" />
+    <delete dir="${javadoc}" />
+  </target>
+
+</project>
+

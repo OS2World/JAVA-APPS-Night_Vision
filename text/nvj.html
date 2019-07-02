@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>Documentation for Night Vision</title>
+</head>
+<!----------------------------------------------------------------------------->
+<body bgcolor="#ffffff">
+<center>
+<h1>N i g h t &nbsp;&nbsp; V i s i o n</h1>
+<br>
+Version @VERSION@
+<br>
+Copyright (C) &nbsp; B. Simpson @YEAR@
+<br>
+Astronomy program for your computer
+</center>
+
+<p>&nbsp;
+<p><b>Night Vision</b> is a "planetarium" program for computers, and will
+display the heavens from any location on earth.  Viewing options allow the
+user to control which sky objects to display, which font to use, and
+manipulation of various star parameters.  Time may be set to run at
+multiple speeds, including backwards.  Color star charts may be printed.
+
+<p>Because this program is written in Java, it can run on any computer
+with a recent version of Java installed (includes most computers -
+see requirements below).
+
+<p><hr><!---------------------------------------------------------------------->
+<h2>Night Vision on the Internet</h2>
+
+<p><b>Night Vision</b> has a home page on the Internet at:
+
+<pre>
+    <a href="http://www.nvastro.com/nvj.html">http://www.nvastro.com/nvj.html</a>
+</pre>
+
+<p>Currently you can contact the author at:
+
+<pre>
+    <a href="mailto:bsimpson@nvastro.com">bsimpson@nvastro.com</a>
+</pre>
+
+<p><!-- This address is heavily SPAM'd, and so it may change in the future.
+Check the web page for the latest address. -->It is a good idea to prefix
+your Email subject line with [NV], as in
+<pre>
+    Subject: [NV] Like your program!
+</pre>
+so that it is easily distinguishable from SPAM and is less likely to
+get inadvertently deleted.
+
+<p><hr><!---------------------------------------------------------------------->
+<h2>License</h2>
+
+<p><b>Night Vision</b> is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+<p><b>Night Vision</b> is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+<p>This license is included <a href="license.txt">here</a> and is also available
+at <a href="http://www.gnu.org/licenses/gpl-3.0-standalone.html">
+http://www.gnu.org/licenses/gpl-3.0-standalone.html</a>.
+
+<p><hr><!---------------------------------------------------------------------->
+<h2>Requirements</h2>
+
+<p><b>Night Vision</b> should run on any computer that contains a recent
+Java Runtime Environment (Java 1.5 or later). Most computers sold in
+recent years meet this requirement. (In the unlikely event that yours
+does not, the Java software can be downloaded
+<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">
+online</a>.)
+
+<p><hr><!---------------------------------------------------------------------->
+<h2>Starting Night Vision</h2>
+
+<p>If <b>Night Vision</b> is installed by downloading and executing
+a self-installing package (i.e. clicking on an install link from a web page),
+an icon should be installed on your computer which, depending on the
+operating system and install options, is typically accessible through
+the start menu.  Clicking on this icon will start the program.
+
+<p>Otherwise if <b>Night Vision</b> is installed by downloading the
+manual zip file, extract the files into a directory on your hard drive
+and issue the following command from a command window in that directory:
+
+<pre>
+    java -jar nvj.jar
+</pre>
+
+<p>Java is case sensitive, so type the command exactly as shown.
+
+<p>On some systems (e.g. Windows) users can double click the left mouse
+button on the nvj.jar file icon to start the program.
+
+<p><hr><!---------------------------------------------------------------------->
+<h2>Your first view</h2>
+
+<p><b>Night Vision</b> opens (when in the default Alt-Az mode)
+with a view of the heavens looking straight up (the zenith)
+from the user's preferred location.  (Or, until
+a preferred location has been selected, a default location of
+Niwot, Colorado, a small town where this program started.)
+
+<p>Within the main star window the mouse can be used to
+manipulate the view.  Simply click and hold
+the left mouse button, then drag it where desired.  (Tip:  It is best
+to click on the bottom half of the window when at the zenith
+to avoid a rapid change in azimuth.)  To zoom in or out use
+the mouse wheel.  Objects can be identified by clicking with the
+right mouse button.
+
+<p>Four Scrollbars can be added if desired by clicking "Set"
+on the menubar, then "Window..." to bring up the
+"Window preferences" window.  The
+scrollbars can be used to control the azimuth and altitude
+(or right ascension and declination if in RA-Dec mode),
+the zoom, and rotation around the center of the window.
+
+<p>Additionally the view can be manipulated via the keyboard, e.g.
+pressing 'z' to zoom in, or 'Shift-z' to zoom out.  See
+"Keys help" in the online help for further details.
+
+<p>Zooming in can also be accomplished by drawing a rectangle on the screen.
+This is done by holding down the 'Shift' key, then pressing the
+left mouse button and dragging the mouse.  When the button is released
+the center of the rectangle is moved to the center of the window
+at a zoom level based on the area of the rectangle.  (Press 'p'
+to return to the previous view.)
+
+<p>An entire 180&deg; view can be seen (i.e. 90&deg; in all directions
+from the center of the window) by zooming out and/or enlarging the
+window.
+
+<p>The toolbar allows for easy manipulation
+of viewable items and other program functions.  Hovering the
+mouse over each button will trigger a popup that provides a brief
+description of its function.
+
+<p>Star charts may be printed by clicking on the toolbar's print
+button (or via the "File" pull down menu).
+
+<p><hr><!---------------------------------------------------------------------->
+<h2>Setup</h2>
+
+<p><b>Night Vision</b> can be set up for any location on earth.  Begin by going
+to the "Set location" window (via the "Set" pull down menu).  Select the
+location closest to your location and press "OK Location".  Or enter your
+longitude, latitude, and time zone values and press "OK Coordinates".  If your
+new location is in a different time zone, then your local time (as displayed in
+the information bar above the star window) will have changed, and you must
+reset the time.  To do so, go to the "Set local date/time" window (via the
+"Time" pull down menu), and then press "Set to computer date/time".  You are
+now re-sync'd to your computer time.
+
+<p>Be sure to save this location information if you would like
+<b>Night Vision</b> to always start at this position.  Go to the "File"
+pull down menu and select "Save location".
+
+<p>You may also save your viewing preferences (objects, fonts, colors, star
+parameters, ...) by selecting "Save preferences" from the "File" pull down
+menu.
+
+<p>Note:  The location database used in the "Set location" window may be edited
+to add new locations.  See "User editable files" in the online help.
+
+<p><hr><!---------------------------------------------------------------------->
+<h2>Translating Night Vision</h2>
+
+<p><b>Night Vision</b> has been designed to be readily translable into other
+languages.  See the online help for information.
+
+<p><hr><!---------------------------------------------------------------------->
+<h2>Misc. notes</h2>
+
+<p>The star database is derived from the "All-Sky Compiled Catalog of
+2.5 million stars" (ASCC-2.5, 3rd version, Kharchenko N.V., Roeser S, 2009).
+It contains over 1,064,000 stars (through 11th magnitude).
+
+<p>Various sources were used for the algorithms employed by <b>Night Vision</b>.
+Among them are <b><i>Practical Astronomy with your Calculator</i></b>
+(3rd edition) by Peter Duffett-Smith, and <b><i>Astronomical Algorithms</i></b>
+(2nd edition) by Jean Meeus.
+
+<p><hr><!---------------------------------------------------------------------->
+<h2>Future updates</h2>
+
+<p><b>Night Vision</b> may be updated in the future.  Future updates may
+include:
+
+<ul>
+<li>Telescope interface
+<li>User modifiable information bar
+<li>Comets
+<li>...
+</ul>
+
+<p><hr><!---------------------------------------------------------------------->
+<h2>History</h2>
+
+<table cellpadding=5>
+<tr><!-------------------------->
+<td nowrap valign=top>5.1
+<td>Added time controls to Solar System window.  Number of star names has been
+    increased and reflects the standardized names used by the International
+    Astronomical Union (IAU).  Enhanced resolution of desktop icon.
+<tr><!-------------------------->
+<td nowrap valign=top>5.0
+<td>Expanded star database to over a million stars (to 11th magnitude).
+    Updated find for additional stellar designations (e.g. RR Sco, x Her,
+    V986 Oph, ...).  Enhanced the Set location window to include world map.
+    Now requires Java 1.5 or later.
+<tr><!-------------------------->
+<td nowrap valign=top>4.0
+<td>Added view manipulation via mouse drag and mouse wheel.  Larger and
+    continuously variable star sizes.  Find stars via their designation.
+    Find deep sky objects via their category and name.  Zoom-based limiting
+    magnitude for stars and deep sky objects.  Added deep sky name button
+    to toolbar.
+<tr><!-------------------------->
+<td nowrap valign=top>3.1
+<td>Added "Apply" button to various windows.  Using BitRock InstallBuilder
+    to create Mac and Linux installable packages.
+<tr><!-------------------------->
+<td nowrap valign=top>3.0
+<td>Added a solar system window.  Program now "open source" (with source
+    code available) and licensed under GNU General Public License version 3.
+    3.0.1:  Adjusted for Mac java issue.
+<tr><!-------------------------->
+<td nowrap valign=top>2.2
+<td>Increased number of stars to 9th magnitude.  Angular size added for
+    (most) deep sky objects.
+    2.2.1:  Updated for new website and Email.
+<tr><!-------------------------->
+<td nowrap valign=top>2.1
+<td>Added RA-Dec mode.  Enhanced the "Computer time" icon on the toolbar so
+    that it indicates if the local time is out of sync with the computer's time.
+<tr><!-------------------------->
+<td nowrap valign=top>2.0
+<td>Added a toolbar, which facilitates program operation and adds new time
+    change functionality.
+<tr><!-------------------------->
+<td nowrap valign=top>1.3
+<td>Added labels for grids.  Enhanced accuracy and added angular size and
+    distance for solar system objects.  Added planet magnitude.
+    1.3.1:  Fixed bug where "Select object" window did not show when
+    running on Java 1.3.  Also adjusted how time restarts when "thawed".
+<tr><!-------------------------->
+<td nowrap valign=top>1.2
+<td>Added precession and nutation.  Expanded range of time to
+    1000AD - 3000AD.  Added phases of the moon.  Corrected a
+    problem displaying the preview area in the "Set colors"
+    window that occurs with some versions of Java.  Added a
+    web-based self-installing version for Windows users.
+<tr><!-------------------------->
+<td nowrap valign=top>1.1
+<td>Corrected "Star database file nvj.db is corrupted" problem
+    on Mac OS X JVM 1.4.1_01.  Mercury &amp; Venus can now appear
+    in front of sun.
+<tr><!-------------------------->
+<td nowrap valign=top>1.0
+<td>Initial Release
+</table>
+
+<p><hr><!---------------------------------------------------------------------->
+
+<br>
+</body>
+</html>

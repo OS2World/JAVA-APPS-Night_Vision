@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>Help for Object identification window</title>
+</head>
+<!----------------------------------------------------------------------------->
+<body bgcolor="#ffffff">
+<h1>Object identification window</h1>
+
+<p>This window displays information about the object or area
+clicked on.
+
+<p>If an object was found, its type and name (if available) are listed.
+Also listed are positional coordinates:  right ascension, declination,
+azimuth, and altitude (at the time the object was selected).  If this
+is not the first identification done, then the angular separation from
+the previous identify is listed.
+
+<p>Also displayed are J2000 coordinates, which describes the location
+without precession and nutation.  These are the coordinates commonly
+seen in star charts.  Precession is the slow wobble the earth's axis
+makes (like a gyroscope) over a 25,800 year cycle.  Additionally
+there is a small nodding of the axis which is called Nutation.  The
+two combined shift the J2000 coordinates into the observed coordinates.
+
+<p>For the Sun and the planets, the distance in astronomical units (AU)
+is given.  (1 AU is approximately the mean distance from the Earth to
+the Sun.)  For the Moon, the distance in kilometers (KM) is given.  To
+convert from AU to KM, multiply by 149,597,870.691.  To convert from
+KM to miles, divide by 1.609344.  Also the angular size is given
+in seconds for the planets, and in minutes for the Sun and Moon.
+(Jupiter and Saturn have noticeable differences between equatorial
+and polar diameters due to their rapid rotations.  The larger (equatorial)
+size is given.  Multiply Saturn's size by 2.27 to get the width of
+its (readily) visible rings.  The size for Venus includes its
+thick cloud layer.)  The angular size is also given for most
+deep sky objects.
+
+<p>Depending on availability, the (apparent) magnitude is given,
+and for stars, their designation (Bayer and/or Flamsteed labels
+followed by a 3 letter
+<a href="const.html">constellation</a> abbreviation) and
+<a href="spectra.html">spectral type</a> are listed.
+
+<br><h3>Corrections applied to coordinate positions</h3>
+
+<p>Although the speed of light is very fast (299,792,458 meters per second),
+it is not infinite.  This requires adjustments for the following:
+
+<ul>
+<li><i>Effect of light-time</i>:  The sun and planets are positioned
+where they were when they emitted or reflected the light that is
+currently seen.
+
+<li><i>Effect of aberration</i>:  The motion of the earth around the
+sun deflects light in much the same way as a car driving through a
+rain storm changes the perceived direction of the rain hitting the
+windshield.  (The adjustment for aberration is not applied to
+J2000 coordinates.)
+</ul>
+
+<p>Additionally the sun, moon, and planets are adjusted to account
+for the observer's longitude and latitude.  (This corrects for
+<i>diurnal parallax</i> - also called <i>geocentric parallax</i>.)
+
+<p>Some adjustments not done, but may be included in later versions
+of <b>Night Vision</b>, are:
+
+<ul>
+<li><i>Proper motion</i>:  The apparent motion of a star across the
+celestial sphere.  This is at right angles to the observer's line of
+sight, as opposed <i>radial motion</i>, which is toward or away from
+the observer.
+
+<li><i>Atmospheric refraction</i>:  The bending light caused by
+our atmosphere.  It is most pronounced at the horizon, causing
+objects to appear higher than they really are.
+
+<li><i>Annual parallax</i>:  The slight shift in the position of
+nearer stars when seen from opposite sides of the earth's orbit.
+It never exceeds 0.8 arc seconds.
+
+<li><i>Gravitational deflection of light</i>:  The deflection of
+light passing close to the sun.
+</ul>
+<br>
+</body>
+</html>

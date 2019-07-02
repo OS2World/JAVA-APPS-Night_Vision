@@ -1,0 +1,243 @@
+# Deep sky object file for Night Vision
+#
+# '#' is a comment character.  It can be used in any column,
+# and anything after it is ignored.
+#
+# There are 8 fields, separated by '|'.  They are, in order:
+#   Name
+#   Alternate name
+#   Constellation - unused, for convenience only
+#   Type
+#   Coordinates - RA,Dec
+#   Magnitude
+#   Dimensions
+#   Common or descriptive name - Anything after '#' is ignored
+#          and treated as a comment
+#
+# Key to types
+# --------------------
+# PN  Planetary Nebula
+# DN  Diffuse Nebula
+# DK  Dark Nebula
+# GC  Globular Cluster
+# OC  Open Cluster
+# S2  Double star
+# SG  Spiral Galaxy
+# EG  Elliptical Galaxy
+# IG  Irregular Galaxy
+# GA  Galaxy (type unspecified)
+# Anything else is interpreted as unspecified.
+# --------------------
+#
+# If the magnitude field is blank or 0, it will be interpreted
+# as unspecified, and the object will always be shown.  If it
+# begins with "U", it will also be interpreted as unspecified,
+# but will only show if the limiting magnitude is at least
+# that value.
+#
+# Coordinates (RA,Dec) should be specified for Epoch J2000.
+#
+# Dimensions are in (arc)minutes, unless it ends in s for seconds,
+# or d for degrees.
+#
+# Fields can generally be of any width, but are lined-up here
+# for convenience.
+#
+# Unused fields at the end of a line can be omitted.
+# E.g. following is acceptable:  B92|||DK|18:15.5,-18:11
+#
+# If an object is not displayed by Night Vision, it is not able
+# to interpret one or more of the fields.  Look at the Messages
+# window in Night Vision (from the menubar, click "File", then
+# "Show messages") for clues about the problem.
+#
+# Note:  The order in which the objects are listed is the
+# same order that they will appear in the "Find" window for
+# deep sky objects.
+#
+#------------------------------------------------------------
+M1      |NGC 1952|Tau|DN|05:34:32.0, 22:00:52| 8.4|      6x4|Crab Nebula
+M2      |NGC 7089|Aqr|GC|21:33:27.0,-00:49:24| 6.5|     11.7|
+M3      |NGC 5272|CVn|GC|13:42:11.2, 28:22:32| 6.3|     18.6|
+M4      |NGC 6121|Sco|GC|16:23:35.4,-26:31:32| 5.9|     26.3|
+M5      |NGC 5904|Ser|GC|15:18:33.7, 02:04:58| 5.8|     19.9|
+M6      |NGC 6405|Sco|OC|17:40.1   ,-32:13   | 4.2|       20|Butterfly Cluster
+M7      |NGC 6475|Sco|OC|17:53.9   ,-34:48   | 3.3|       80|
+M8      |NGC 6523|Sgr|DN|18:03.8   ,-24:23   | 5.0|       45|Lagoon Nebula
+M9      |NGC 6333|Oph|GC|17:19:11.8,-18:30:59| 7.9|      5.5|
+M10     |NGC 6254|Oph|GC|16:57:09.0,-04:05:58| 6.6|     12.2|
+M11     |NGC 6705|Sct|OC|18:51.1   ,-06:16   | 5.8|       14|Wild Duck Cluster
+M12     |NGC 6218|Oph|GC|16:47:14.4,-01:56:52| 6.6|     14.5|
+M13     |NGC 6205|Her|GC|16:41:41.4, 36:27:37| 5.8|     23.2|Hercules Cluster
+M14     |NGC 6402|Oph|GC|17:37:36.2,-03:14:46| 7.6|      6.7|
+M15     |NGC 7078|Peg|GC|21:29:58.4, 12:10:00| 6.3|     12.3|
+M16     |NGC 6611|Ser|DN|18:18.8   ,-13:49   | 6.6|        7|Eagle Nebula
+M17     |NGC 6618|Sgr|DN|18:20.8   ,-16:11   | 6.0|       11|Omega Nebula
+M18     |NGC 6613|Sgr|OC|18:20.0   ,-17:06   | 6.9|        9|
+M19     |NGC 6273|Oph|GC|17:02:37.7,-26:16:05| 7.2|      5.3|
+M20     |NGC 6514|Sgr|DN|18:02.4   ,-23:02   | 6.3|       28|Trifid Nebula
+M21     |NGC 6531|Sgr|OC|18:04.3   ,-22:29   | 5.9|       13|
+M22     |NGC 6656|Sgr|GC|18:36:24.2,-23:54:12| 5.2|       24|
+M23     |NGC 6494|Sgr|OC|17:56.9   ,-18:59   | 5.5|       27|
+M24     |        |Sgr|OC|18:16.9   ,-18:29   | 4.5|       90|Sagittarius Star Cloud
+M25     |IC 4725 |Sgr|OC|18:31.6   ,-19:15   | 4.6|       29|
+M26     |NGC 6694|Sct|OC|18:45.2   ,-09:23   | 8.0|       15|
+M27     |NGC 6853|Vul|PN|19:59:36.3, 22:43:16| 7.5| 480x340s|Dumbbell Nebula
+M28     |NGC 6626|Sgr|GC|18:24:32.9,-24:52:12| 6.9|       15|
+M29     |NGC 6913|Cyg|OC|20:23.9   , 38:31   | 6.6|        7|
+M30     |NGC 7099|Cap|GC|21:40:22.0,-23:10:45| 7.5|      8.9|
+M31     |NGC 224 |And|SG|00:42:44.3, 41:16:08| 3.6|   189x61|Andromeda Galaxy
+M32     |NGC 221 |And|EG|00:42:41.9, 40:51:55| 8.3|  8.5x6.5|# companion of M31
+M33     |NGC 598 |Tri|SG|01:33:50.9, 30:39:37| 5.8|68.7x41.6|Triangulum Pinwheel
+M34     |NGC 1039|Per|OC|02:42.0   , 42:46   | 5.2|       35|
+M35     |NGC 2168|Gem|OC|06:08.9   , 24:21   | 5.1|       28|
+M36     |NGC 1960|Aur|OC|05:36.2   , 34:08   | 6.0|       12|
+M37     |NGC 2099|Aur|OC|05:52.3   , 32:33   | 5.6|       24|
+M38     |NGC 1912|Aur|OC|05:28.7   , 35:51   | 6.4|       21|
+M39     |NGC 7092|Cyg|OC|21:32.0   , 48:27   | 4.6|       32|
+M40     |WNC 4   |UMa|S2|12:22:12.5, 58:04:59| 9.0|      52s|# double star
+M41     |NGC 2287|CMa|OC|06:46.0   ,-20:45   | 4.5|       38|
+M42     |NGC 1976|Ori|DN|05:35:17.3,-05:23:28| 4.0|    90x60|Orion Nebula
+M43     |NGC 1982|Ori|DN|05:35.5   ,-05:16   | 9.0|    20x15|
+M44     |NGC 2632|Cnc|OC|08:40.1   , 19:41   | 3.1|       95|Beehive Cluster
+M45     |        |Tau|OC|03:47.0   , 24:07   | 1.2|         |Pleiades
+M46     |NGC 2437|Pup|OC|07:41.8   ,-14:49   | 6.1|       27|
+M47     |NGC 2422|Pup|OC|07:36.6   ,-14:29   | 4.4|       30|
+M48     |NGC 2548|Hya|OC|08:13.8   ,-05:45   | 5.8|       54|
+M49     |NGC 4472|Vir|EG|12:29.8   , 08:00   | 8.4|  9.8x8.2|
+M50     |NGC 2323|Mon|OC|07:02.8   ,-08:23   | 5.9|       16|
+M51     |NGC 5194|CVn|SG|13:29:52.3, 47:11:42| 8.5| 10.8x6.6|Whirlpool Galaxy
+M52     |NGC 7654|Cas|OC|23:24.8   , 61:35   | 6.9|       13|
+M53     |NGC 5024|Com|GC|13:12:55.3, 18:10:09| 7.7|     14.4|
+M54     |NGC 6715|Sgr|GC|18:55:03.3,-30:28:42| 7.7|      9.1|
+M55     |NGC 6809|Sgr|GC|19:39:59.3,-30:57:44| 7.0|       19|
+M56     |NGC 6779|Lyr|GC|19:16:35.5, 30:11:04| 8.4|        5|
+M57     |NGC 6720|Lyr|PN|18:53:35.1, 33:01:45| 8.8|    86x62|Ring Nebula
+M58     |NGC 4579|Vir|SG|12:37:43.5, 11:49:04| 9.8|    6x4.8|
+M59     |NGC 4621|Vir|EG|12:42:02.4, 11:38:46| 9.8|    5.3x4|
+M60     |NGC 4649|Vir|EG|12:43:40.0, 11:33:07| 8.8|  7.6x6.2|
+M61     |NGC 4303|Vir|SG|12:21:55.0, 04:28:29| 9.7|  6.5x5.9|
+M62     |NGC 6266|Oph|GC|17:01:12.6,-30:06:45| 6.6|     14.1|
+M63     |NGC 5055|CVn|SG|13:15:49.3, 42:01:47| 9.0| 12.6x7.5|Sunflower Galaxy
+M64     |NGC 4826|Com|SG|12:56:43.9, 21:41:00| 8.5|   10.3x5|Black-Eye Galaxy
+M65     |NGC 3623|Leo|SG|11:18:55.8, 13:05:32| 9.3|    9x2.3|
+M66     |NGC 3627|Leo|SG|11:20:15.1, 12:59:28| 9.0|  9.1x4.1|
+M67     |NGC 2682|Cnc|OC|08:51.3   , 11:49   | 6.9|       30|
+M68     |NGC 4590|Hya|GC|12:39:28.0,-26:44:34| 8.2|      9.8|
+M69     |NGC 6637|Sgr|GC|18:31:23.2,-32:20:53| 7.7|      7.1|
+M70     |NGC 6681|Sgr|GC|18:43:12.6,-32:17:31| 8.1|      7.8|
+M71     |NGC 6838|Sge|GC|19:53:46.1, 18:46:42| 8.3|      6.1|
+M72     |NGC 6981|Aqr|GC|20:53:27.9,-12:32:13| 9.4|      5.9|
+M73     |NGC 6994|Aqr|OC|20:59.0   ,-12:38   | 8.9|      2.8|# asterism of 4 stars
+M74     |NGC 628 |Psc|SG|01:36:41.8, 15:47:00| 9.5|   10x9.4|
+M75     |NGC 6864|Sgr|GC|20:06:04.8,-21:55:16| 8.6|        6|
+M76     |NGC 650 |Per|PN|01:42:19.0, 51:34:30|10.1| 163x107s|Little Dumbell
+M77     |NGC 1068|Cet|SG|02:42:40.8,-00:00:48| 8.9|  7.3x6.3|
+M78     |NGC 2068|Ori|DN|05:46.8   , 00:03   | 8.0|      8x6|
+M79     |NGC 1904|Lep|GC|05:24:10.6,-24:31:27| 8.0|      7.8|
+M80     |NGC 6093|Sco|GC|16:17:02.5,-22:58:30| 7.3|      5.1|
+M81     |NGC 3031|UMa|SG|09:55:33.0, 69:03:55| 7.3|24.9x11.5|
+M82     |NGC 3034|UMa|IG|09:55:51.8, 69:40:46| 8.9| 10.5x5.1|
+M83     |NGC 5236|Hya|SG|13:37:00.5,-29:52:00| 8.0|13.1x12.2|
+M84     |NGC 4374|Vir|EG|12:25:04.7, 12:53:13| 9.4|    6.7x6|
+M85     |NGC 4382|Com|SG|12:25:24.2, 18:11:27| 9.2|  7.4x5.9|
+M86     |NGC 4406|Vir|EG|12:26:12.1, 12:56:46| 9.2|  9.8x6.3|
+M87     |NGC 4486|Vir|EG|12:30:49.4, 12:23:27| 8.8|  8.7x6.6|
+M88     |NGC 4501|Com|SG|12:31:59.2, 14:25:14| 9.7|  6.8x3.7|
+M89     |NGC 4552|Vir|EG|12:35:40.0, 12:33:23| 9.8|  5.3x4.8|
+M90     |NGC 4569|Vir|SG|12:36:50.1, 13:09:46| 9.6|  9.9x4.4|
+M91     |NGC 4548|Com|SG|12:35:26.9, 14:29:46|10.4|  5.2x4.2|
+M92     |NGC 6341|Her|GC|17:17:07.3, 43:08:12| 6.5|     11.2|
+M93     |NGC 2447|Pup|OC|07:44.5   ,-23:51   | 6.2|       22|
+M94     |NGC 4736|CVn|SG|12:50:52.8, 41:07:10| 8.2|12.3x10.8|
+M95     |NGC 3351|Leo|SG|10:43:57.7, 11:42:13|10.0|  7.3x4.4|
+M96     |NGC 3368|Leo|SG|10:46:45.9, 11:49:20| 9.3|  7.8x5.2|
+M97     |NGC 3587|UMa|PN|11:14:47.7, 55:01:09| 9.9| 202x196s|Owl Nebula
+M98     |NGC 4192|Com|SG|12:13:48.3, 14:53:00|10.1|  9.4x2.3|
+M99     |NGC 4254|Com|SG|12:18:49.6, 14:25:00| 9.8|  5.3x4.6|
+M100    |NGC 4321|Com|SG|12:22:55.0, 15:49:20| 9.7|  7.5x6.1|
+M101    |NGC 5457|UMa|SG|14:03:12.5, 54:20:53| 7.7|28.5x28.3|Pinwheel Galaxy
+M102    |NGC 5866|Dra|SG|15:06:29.4, 55:45:47|10.2|  6.5x3.1|# M102 uncertain
+M103    |NGC 581 |Cas|OC|01:33.3   , 60:39   | 7.4|        6|
+M104    |NGC 4594|Vir|SG|12:39:59.4,-11:37:23| 8.3|  8.6x4.2|Sombrero Galaxy
+M105    |NGC 3379|Leo|EG|10:47:49.8, 12:34:54| 9.4|  5.3x4.8|
+M106    |NGC 4258|CVn|SG|12:18:57.5, 47:18:14| 8.7| 17.4x6.6|
+M107    |NGC 6171|Oph|GC|16:32:31.9,-13:03:13| 8.1|      3.3|
+M108    |NGC 3556|UMa|SG|11:11:31.3, 55:40:28|10.2|  8.6x2.4|
+M109    |NGC 3992|UMa|SG|11:57:35.9, 53:22:35| 9.9|  7.5x4.4|
+M110    |NGC 205 |And|EG|00:40:22.0, 41:41:11| 8.2|19.5x11.5|# companion of M31
+B33     |        |Ori|DK|05:40.9   ,-02:28   | U10|      6x4|Horsehead Nebula
+B72     |        |Oph|DK|17:23.5   ,-23:38   | U10|       30|The Snake
+B87     |        |Sgr|DK|18:04.3   ,-32:30   | U10|         |Parrot's Head
+B92     |        |Sgr|DK|18:15.5   ,-18:11   | U10|         |
+Coalsack|        |Cru|DK|12:50.6   ,-63:15   |   U|     7x5d|
+Cr 399  |        |Vul|OC|19:26.3   , 20:11   | 3.6|       80|Coathanger Cluster
+IC 342  |        |Cam|SG|03:46:48.2, 68:05:58| 8.1|       21|
+IC 418  |        |Lep|PN|05:27:28.2,-12:41:50|10.7|      12s|Spirograph Nebula
+IC 1396 |        |Cep|DN|21:39.1   , 57:30   | 3.5|         |
+IC 2602 |        |Car|OC|10:43.2   ,-64:24   | 1.9|       50|
+IC 4665 |        |Oph|OC|17:46.3   , 05:43   | 4.2|         |
+IC 4756 |        |Ser|OC|18:39.0   , 05:27   | 5.4|         |
+LMC     |        |Dor|SG|05:23.6   ,-69:45   | 0.1|    11x7d|Large Magellanic Cloud
+Mel 111 |        |Com|OC|12:25.0   , 26:00   | 1.8|         |
+NGC 55  |        |Scl|SG|00:15:08.4,-39:13:13| 8.2| 31.2x5.9|
+NGC 104 |        |Tuc|GC|00:24:05.2,-72:04:52| 4.0|       30|47 Tucanae
+NGC 246 |        |Cet|PN|00:47:03.3,-11:52:20|11.0| 240x210s|
+NGC 247 |        |Cet|SG|00:47:08.5,-20:45:37| 9.5|   21x5.6|
+NGC 253 |        |Scl|SG|00:47:33.1,-25:17:17| 7.9|   26.4x6|
+NGC 288 |        |Scl|GC|00:52:45.3,-26:34:43| 8.1|     13.8|
+NGC 300 |        |Scl|SG|00:54:53.4,-37:41:00| 8.5|19.3x13.3|
+NGC 362 |        |Tuc|GC|01:03:14.3,-70:50:54| 6.8|     12.9|
+NGC 457 |        |Cas|OC|01:19.6   , 58:20   | 6.4|       13|Owl Cluster
+NGC 752 |        |And|OC|01:57.8   , 37:49   | 5.7|       50|
+NGC 869 |        |Per|OC|02:19.1   , 57:09   | 5.5|       30|
+NGC 884 |        |Per|OC|02:22.5   , 57:08   | 6.2|       30|
+NGC 891 |        |And|SG|02:22:33.3, 42:21:02|10.0| 13.1x2.8|
+NGC 1097|        |For|SG|02:46:19.0,-30:16:29| 9.5|  9.4x6.6|
+NGC 1360|        |For|PN|03:33:14.6,-25:52:18| 9.4| 360x270s|
+NGC 1499|        |Per|DN|04:03.2   , 36:23   | 6.0|   160x40|California Nebula
+NGC 1981|        |Ori|OC|05:35.2   ,-04:24   | 4.2|       25|
+NGC 2070|        |Dor|DN|05:38.6   ,-69:06   | 8.0|       20|Tarantula Nebula
+NGC 2237|        |Mon|DN|06:32.3   , 05:03   | 9.0|    80x60|Rosette Nebula
+NGC 2261|        |Mon|DN|06:39.2   , 08:45   | 9.0|      2x1|Hubble's Variable Nebula
+NGC 2264|        |Mon|DN|06:41.0   , 09:54   | 3.9|       20|
+NGC 2392|        |Gem|PN|07:29:10.8, 20:54:42| 9.5|   47x43s|Eskimo Nebula
+NGC 2403|        |Cam|SG|07:36:51.4, 65:36:12| 8.6|23.4x11.8|
+NGC 2477|        |Pup|OC|07:52.2   ,-38:32   | 5.8|       27|
+NGC 2516|        |Car|OC|07:58.1   ,-60:45   | 3.8|       21|
+NGC 2841|        |UMa|SG|09:22:02.2, 50:58:42| 9.5|  7.7x3.6|
+NGC 2903|        |Leo|SG|09:32:09.8, 21:30:05| 9.0|   12x5.6|
+NGC 3132|        |Vel|PN|10:07:01.8,-40:26:12| 9.2|   84x53s|
+NGC 3242|        |Hya|PN|10:24:46.2,-18:38:34| 8.6|   40x35s|Ghost of Jupiter
+NGC 3372|        |Car|DN|10:45.1   ,-59:52   | 1.0|       2d|Carina Nebula
+NGC 3628|        |Leo|SG|11:20:16.9, 13:35:16|10.0| 13.1x3.1|
+NGC 4244|        |CVn|SG|12:17:29.8, 37:48:30|10.2| 15.9x1.8|
+NGC 4494|        |Com|EG|12:31:24.3, 25:46:31| 9.8|  4.5x4.3|
+NGC 4565|        |Com|SG|12:36:21.0, 25:59:17| 9.6| 15.8x2.1|
+NGC 4631|        |CVn|SG|12:42:07.8, 32:32:27| 9.3| 15.2x2.8|
+NGC 4656|        |CVn|SG|12:43:58.3, 32:10:12|10.4| 15.3x2.4|
+NGC 4755|        |Cru|OC|12:53.6   ,-60:21   | 4.2|       10|Jewel Box
+NGC 5128|        |Cen|EG|13:25:27.6,-43:01:09| 7.0|27.6x20.5|
+NGC 5139|        |Cen|GC|13:26:45.9,-47:28:37| 3.9|     36.3|Omega Centauri
+NGC 5897|        |Lib|GC|15:17:24.4,-21:00:37| 8.6|      8.7|
+NGC 5907|        |Dra|SG|15:15:54.0, 56:19:45|10.6| 11.8x1.3|
+NGC 6210|        |Her|PN|16:44:29.5, 23:48:00| 9.3|   20x13s|
+NGC 6231|        |Sco|OC|16:54.2   ,-41:49   | 2.6|       15|
+NGC 6543|        |Dra|PN|17:58:33.4, 66:38:00| 8.8|   22x16s|Cat's Eye Nebula
+NGC 6624|        |Sgr|GC|18:23:40.6,-30:21:39| 8.3|      5.9|
+NGC 6781|        |Aql|PN|19:18:28.2, 06:32:21|11.8| 111x109s|
+NGC 6822|        |Sgr|IG|19:44:56.5,-14:48:30|10.0|15.4x14.2|Barnard's Galaxy
+NGC 6826|        |Cyg|PN|19:44:48.2, 50:31:30| 9.8|   27x24s|Blinking Planetary Nebula
+NGC 6888|        |Cyg|DN|20:12.1   , 38:21   | 7.4|    20x10|Crescent Nebula
+NGC 6910|        |Cyg|OC|20:23.2   , 40:47   | 7.4|        8|
+NGC 6946|        |Cep|SG|20:34:52.4, 60:09:14| 9.1| 11.2x9.8|
+NGC 6960|        |Cyg|DN|20:45.8   , 30:39   |  U9|     70x7|Western Veil Nebula
+NGC 6992|        |Cyg|DN|20:56.3   , 31:44   |  U8|     60x8|Eastern Veil Nebula
+NGC 7000|        |Cyg|DN|20:58.8   , 44:20   | 4.0|   120x60|North America Nebula
+NGC 7009|        |Aqr|PN|21:04:10.9,-11:21:48| 8.3|   28x23s|Saturn Nebula
+NGC 7293|        |Aqr|PN|22:29:38.6,-20:50:14| 7.3|       20|Helix Nebula
+NGC 7331|        |Peg|SG|22:37:04.4, 34:25:00| 9.7| 10.2x4.2|
+NGC 7635|        |Cas|DN|23:20.8   , 61:12   |10.0|     15x8|Bubble Nebula
+NGC 7662|        |And|PN|23:25:54.0, 42:32:06| 9.2|   32x28s|Blue Snowball
+NGC 7789|        |Cas|OC|23:57.4   , 56:43   | 6.7|       16|Caroline's Rose
+SMC     |        |Tuc|SG|00:52.7   ,-72:50   | 2.3|     5x3d|Small Magellanic Cloud

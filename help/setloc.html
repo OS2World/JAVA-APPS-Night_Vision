@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>Help for Set location window</title>
+</head>
+<!----------------------------------------------------------------------------->
+<body bgcolor="#ffffff">
+<h1>Set location window</h1>
+
+<p>Use this window to select a location anywhere on earth, either by
+selecting a location in the location list box, or by directly entering the
+longitude and latitude of the desired location.
+
+<p>The locations shown in the location list box are the locations listed
+in the location database file, <b>nvlocations.txt</b>, which is kept
+internally within the program unless the user chooses to
+<a href="write.html">write</a> it externally.  (This allows
+the user to <a href="useredit.html">edit</a> the locations to
+their preferences - see directions at the top of <b>nvlocations.txt</b>).
+Most of the locations have been configured to know when
+daylight saving time (DST) is in effect.  When this is known, the
+"Auto DST" checkbox will be enabled and checked (by default).
+Most users will not need to change this setting.  To override,
+uncheck the "Auto DST" checkbox and then check or uncheck the "DST on"
+checkbox to manually set whether DST is in effect.  For locations
+that have not been configured to automatically know when DST is
+to occur (in the <b>nvlocations.txt</b> file), the "Auto DST" checkbox
+will be disabled, and the user must manually set DST.
+Once a location and DST have been set, press "OK Location" to go to
+the new location.
+
+<p>Alternately the new location can be specified by directly
+entering its longitude, latitude, and time zone.
+Latitude is entered as 0 to 90 degrees and 0 to 59 minutes,
+and selecting north or south.
+(Minutes must be 0 if degrees are set to 90.)
+Longitude is entered as 0 to 180 degrees and 0 to 59 minutes,
+and selecting east or west.
+(Minutes must be 0 if degrees are set to 180.)
+Time zone is entered as 0 to 13 hours and 0 to 59 minutes,
+and selecting + or - (should follow east and west longitudes
+respectively).  (Minutes must be 0 if hours are set to 13.)
+Time zone represents the (standard) time difference between
+the location and Greenwich, England.
+Check or uncheck the "DST on" checkbox to manually set whether DST
+is in effect.  Once coordinates and DST have been set, press
+"OK Coordinates" to go to the new location.
+
+<p>Note:  Changing the location will change the time indicated in the
+information bar above the main star window if the new time zone differs from
+current time zone.  This allows the user to hop from location to location while
+maintaining the same time in the first location.  For example, hopping from
+Denver to Dallas changes the time from say 1:00 to 2:00, because
+the time in Dallas is 2:00 when the time in Denver is 1:00.
+
+<p>When DST is not automatic, DST can also be manually set via the
+"Set local date/time" window.
+
+<p>Press "OK Location" to accept a location from the list box.
+<br>
+Press "OK Coordinates" to accept a location based on the specified
+longitude/latitude coordinates and time zone.
+<br>
+Pressing "Cancel" rejects any changes.
+
+<p>If desired, use the "Save location" selection from the "File" pull down menu
+to save the current location so that <b>Night Vision</b> begins there when
+starting.  "Save location" also saves the current DST setting.
+
+<p>Note:  When "Auto DST" is enabled and checked, the transition dates to and
+from DST are determined by information within your computer's Java
+installation.  Unfortunately this information contains no historical data.
+Thus the same transition rules are applied to all years.  For example,
+in 2007 the USA changed the rules for the dates when DST starts and ends,
+expanding the amount of the year when DST is in effect.  To be accurate,
+your Java installation should be updated with the latest DST rules.
+However these same rules are also applied to prior years when DST was
+determined differently.  Thus for prior years "Auto DST" should be
+unset so that DST can be set manually, depending on date.
+<br>
+</body>
+</html>
